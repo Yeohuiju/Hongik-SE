@@ -27437,7 +27437,7 @@
 											"parentStyle": false,
 											"left": 8,
 											"top": 8,
-											"width": 776,
+											"width": 872,
 											"height": 296,
 											"nameLabel": {
 												"$ref": "AAAAAAGW5GO9iOz5mAI="
@@ -29415,13 +29415,13 @@
 													},
 													"font": "Arial;13;0",
 													"parentStyle": false,
-													"left": 88.181396484375,
+													"left": 84.918701171875,
 													"top": 53.5,
-													"width": 107.63720703125,
+													"width": 114.16259765625,
 													"height": 13,
 													"alpha": 1.5707963267948966,
 													"distance": 10,
-													"text": "3: registerBicycle()"
+													"text": "3: inputBicycleInfo()"
 												},
 												{
 													"_type": "NodeLabelView",
@@ -30081,13 +30081,13 @@
 													},
 													"font": "Arial;13;0",
 													"parentStyle": false,
-													"left": 655.513671875,
-													"top": 151,
-													"width": 85.97265625,
+													"left": 656.40283203125,
+													"top": 152,
+													"width": 218.1943359375,
 													"height": 13,
-													"alpha": 0.18534791225985328,
-													"distance": 48.83646178829912,
-													"text": "3.1.1: Bicycle()"
+													"alpha": 0.06945331997530607,
+													"distance": 115.27792503337315,
+													"text": "3.1.1 [userSession.isAdmin]: Bicycle()"
 												},
 												{
 													"_type": "NodeLabelView",
@@ -30193,7 +30193,7 @@
 									"_parent": {
 										"$ref": "AAAAAAGW5GO9h+z2Q1M="
 									},
-									"name": "3: registerBicycle()",
+									"name": "3: inputBicycleInfo()",
 									"source": {
 										"$ref": "AAAAAAGW5GQTXu1f9BA="
 									},
@@ -30227,7 +30227,7 @@
 									"_parent": {
 										"$ref": "AAAAAAGW5GO9h+z2Q1M="
 									},
-									"name": "3.1.1: Bicycle()",
+									"name": "3.1.1 [userSession.isAdmin]: Bicycle()",
 									"source": {
 										"$ref": "AAAAAAGW5GZpMO2p4O4="
 									},
@@ -36505,13 +36505,13 @@
 													},
 													"font": "Arial;13;0",
 													"parentStyle": false,
-													"left": 496.261474609375,
+													"left": 504.08740234375,
 													"top": 212,
-													"width": 230.47705078125,
+													"width": 234.8251953125,
 													"height": 13,
-													"alpha": 0.017092350937116647,
-													"distance": 117.01709276853532,
-													"text": "2 [!currentUser.isAdmin]: getRentalList()"
+													"alpha": 0.015746728610173885,
+													"distance": 127.01574705523721,
+													"text": "2 [!userSession.isAdmin]: getRentalList()"
 												},
 												{
 													"_type": "NodeLabelView",
@@ -37531,7 +37531,7 @@
 									"_parent": {
 										"$ref": "AAAAAAGW5J+3+Oj81+w="
 									},
-									"name": "2 [!currentUser.isAdmin]: getRentalList()",
+									"name": "2 [!userSession.isAdmin]: getRentalList()",
 									"source": {
 										"$ref": "AAAAAAGW5KH9TOnhIqA="
 									},
