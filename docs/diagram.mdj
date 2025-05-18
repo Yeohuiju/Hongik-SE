@@ -26745,93 +26745,6 @@
 											}
 										},
 										{
-											"_type": "UMLCommMessageView",
-											"_id": "AAAAAAGW45D/Nc4/r1Y=",
-											"_parent": {
-												"$ref": "AAAAAAGW441jdsNYqBM="
-											},
-											"model": {
-												"$ref": "AAAAAAGW45D/Nc4+m0A="
-											},
-											"subViews": [
-												{
-													"_type": "NodeLabelView",
-													"_id": "AAAAAAGW45D/Nc5Av4U=",
-													"_parent": {
-														"$ref": "AAAAAAGW45D/Nc4/r1Y="
-													},
-													"model": {
-														"$ref": "AAAAAAGW45D/Nc4+m0A="
-													},
-													"font": "Arial;13;0",
-													"parentStyle": false,
-													"left": 273.010498046875,
-													"top": 56.5,
-													"width": 59.97900390625,
-													"height": 13,
-													"alpha": 1.5707963267948966,
-													"distance": 10,
-													"text": "3: logout()"
-												},
-												{
-													"_type": "NodeLabelView",
-													"_id": "AAAAAAGW45D/Nc5BvQ4=",
-													"_parent": {
-														"$ref": "AAAAAAGW45D/Nc4/r1Y="
-													},
-													"model": {
-														"$ref": "AAAAAAGW45D/Nc4+m0A="
-													},
-													"visible": false,
-													"font": "Arial;13;0",
-													"parentStyle": false,
-													"left": 303,
-													"top": 41.5,
-													"height": 13,
-													"alpha": 1.5707963267948966,
-													"distance": 25
-												},
-												{
-													"_type": "NodeLabelView",
-													"_id": "AAAAAAGW45D/Nc5CSHY=",
-													"_parent": {
-														"$ref": "AAAAAAGW45D/Nc4/r1Y="
-													},
-													"model": {
-														"$ref": "AAAAAAGW45D/Nc4+m0A="
-													},
-													"visible": false,
-													"font": "Arial;13;0",
-													"parentStyle": false,
-													"left": 303,
-													"top": 56.5,
-													"height": 13,
-													"alpha": 1.5707963267948966,
-													"distance": 10
-												}
-											],
-											"font": "Arial;13;0",
-											"parentStyle": false,
-											"left": 283,
-											"top": 73,
-											"width": 40,
-											"alpha": 1.5707963267948966,
-											"distance": 10,
-											"hostEdge": {
-												"$ref": "AAAAAAGW45D/M84zEkY="
-											},
-											"edgePosition": 1,
-											"nameLabel": {
-												"$ref": "AAAAAAGW45D/Nc5Av4U="
-											},
-											"stereotypeLabel": {
-												"$ref": "AAAAAAGW45D/Nc5BvQ4="
-											},
-											"propertyLabel": {
-												"$ref": "AAAAAAGW45D/Nc5CSHY="
-											}
-										},
-										{
 											"_type": "UMLConnectorView",
 											"_id": "AAAAAAGW45ExNNEpHPc=",
 											"_parent": {
@@ -27098,13 +27011,14 @@
 													},
 													"font": "Arial;13;0",
 													"parentStyle": false,
-													"left": 419.813232421875,
+													"left": 424.234130859375,
 													"top": 158,
-													"width": 69.37353515625,
+													"width": 58.53173828125,
 													"height": 13,
+													"autoResize": true,
 													"alpha": 0,
-													"distance": 40,
-													"text": "3.1: logout()"
+													"distance": 39,
+													"text": "3: logout()"
 												},
 												{
 													"_type": "NodeLabelView",
@@ -27206,28 +27120,11 @@
 								},
 								{
 									"_type": "UMLMessage",
-									"_id": "AAAAAAGW45D/Nc4+m0A=",
-									"_parent": {
-										"$ref": "AAAAAAGW441jdsNX+xU="
-									},
-									"name": "3: logout()",
-									"source": {
-										"$ref": "AAAAAAGW4463U8PizVA="
-									},
-									"target": {
-										"$ref": "AAAAAAGW448XQsQE9cU="
-									},
-									"connector": {
-										"$ref": "AAAAAAGW45D/Ms4wWPA="
-									}
-								},
-								{
-									"_type": "UMLMessage",
 									"_id": "AAAAAAGW45ExNtE0Ig4=",
 									"_parent": {
 										"$ref": "AAAAAAGW441jdsNX+xU="
 									},
-									"name": "3.1: logout()",
+									"name": "3: logout()",
 									"source": {
 										"$ref": "AAAAAAGW448XQsQE9cU="
 									},
