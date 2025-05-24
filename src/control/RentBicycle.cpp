@@ -13,16 +13,18 @@
 /**
  * @param userSession
  * @param bicycleRepository
+ * @param in_fp
+ * @param out_fp
  */
-void RentBicycle::RentBicycle(UserSession* userSession, BicycleRepository* bicycleRepository) {
+void RentBicycle::RentBicycle(UserSession* userSession, BicycleRepository* bicycleRepository, ifstream& in_fp, ofstream& out_fp) {
 
 }
 
 /**
  * @param id
- * @return String
+ * @return string
  */
-String RentBicycle::rentBicycle(String id) {
+string RentBicycle::rentBicycle(string id) {
     return "";
 }
 

@@ -12,8 +12,9 @@
 
 /**
  * @param userSession
+ * @param out_fp
  */
-void ShowRental::ShowRental(UserSession* userSession) {
+void ShowRental::ShowRental(UserSession* userSession, ofstream& out_fp) {
 
 }
 

@@ -10,9 +10,16 @@ class LogoutUI {
 public: 
     
 /**
+ * @param out_fp
+ */
+void LogoutUI(ofstream& out_fp);
+    
+/**
  * @param id
  */
-void startInterface(String id);
+void startInterface(string id);
+private: 
+    ofstream& out_fp;
 };
 
 #endif //_LOGOUTUI_H

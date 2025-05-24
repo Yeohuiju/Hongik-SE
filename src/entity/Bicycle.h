@@ -6,14 +6,26 @@
 #ifndef _BICYCLE_H
 #define _BICYCLE_H
 
-class Bicycle {
-public: 
-    
-String getInfo();
+#include <string>
+
+class Bicycle 
+{
 private: 
-    String id;
-    String name;
-    Boolean isAvailiable;
+    std::string id;
+    std::string name;
+    bool isAvailable;
+
+public: 
+        
+    /**
+     * @param id
+     * @param name
+     */
+    Bicycle(std::string id, std::string name);
+    std::string getId() const;
+    void setAvailable(bool isAvailable);
+    std::string getInfo() const;
+
 };
 
 #endif //_BICYCLE_H

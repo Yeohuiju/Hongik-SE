@@ -9,6 +9,11 @@
 class Exit {
 public: 
     
+/**
+ * @param out_fp
+ */
+void Exit(ofstream& out_fp);
+    
 void execute();
 private: 
     ExitUI exitUI;

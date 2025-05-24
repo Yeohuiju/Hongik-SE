@@ -11,8 +11,9 @@ public:
     
 /**
  * @param userSession
+ * @param out_fp
  */
-void ShowRental(UserSession* userSession);
+void ShowRental(UserSession* userSession, ofstream& out_fp);
     
 void execute();
 private: 

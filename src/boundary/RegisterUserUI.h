@@ -9,13 +9,21 @@
 class RegisterUserUI {
 public: 
     
+/**
+ * @param in_fp
+ * @param out_fp
+ */
+void RegisterUserUI(ifstream in_fp, ofstream& out_fp);
+    
 void startInterface();
     
 /**
- * @param info
  * @param control
  */
-void inputUserInfo(String info, RegisterUser* control);
+void inputInfo(RegisterUser* control);
+private: 
+    ifstream& in_fp;
+    ofstream& out_fp;
 };
 
 #endif //_REGISTERUSERUI_H

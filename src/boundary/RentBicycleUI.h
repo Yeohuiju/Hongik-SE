@@ -9,13 +9,21 @@
 class RentBicycleUI {
 public: 
     
+/**
+ * @param in_fp
+ * @param out_fp
+ */
+void RentBicycleUI(ifstream& in_fp, ofstream& out_fp);
+    
 void startInterface();
     
 /**
- * @param id
  * @param control
  */
-void inputBicycleId(String id, RentBicycle* control);
+void inputInfo(RentBicycle* control);
+private: 
+    ifstream& in_fp;
+    ofstream& out_fp;
 };
 
 #endif //_RENTBICYCLEUI_H

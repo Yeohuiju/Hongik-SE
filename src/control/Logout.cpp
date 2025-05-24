@@ -12,8 +12,9 @@
 
 /**
  * @param userSession
+ * @param out_fp
  */
-void Logout::Logout(UserSession* userSession) {
+void Logout::Logout(UserSession* userSession, ofstream& out_fp) {
 
 }
 

@@ -12,13 +12,15 @@ public:
 /**
  * @param userSession
  * @param bicycleRepository
+ * @param in_fp
+ * @param out_fp
  */
-void RentBicycle(UserSession* userSession, BicycleRepository* bicycleRepository);
+void RentBicycle(UserSession* userSession, BicycleRepository* bicycleRepository, ifstream& in_fp, ofstream& out_fp);
     
 /**
  * @param id
  */
-String rentBicycle(String id);
+string rentBicycle(string id);
     
 void execute();
 private: 

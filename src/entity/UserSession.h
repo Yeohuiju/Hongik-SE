@@ -6,18 +6,26 @@
 #ifndef _USERSESSION_H
 #define _USERSESSION_H
 
-class UserSession {
-public: 
-    
-/**
- * @param user
- */
-void login(User* user);
-    
-void logout();
+#include "User.h"
+
+class UserSession 
+{
 private: 
     User* currentUser;
-    Boolean isAdmin;
+    bool adminFlag;
+
+public: 
+    UserSession();
+    
+    /**
+     * @param user
+     */
+    void login(User* user);
+        
+    void logout();
+    User* getCurrentUser() const;
+    bool isAdmin() const;
+
 };
 
 #endif //_USERSESSION_H

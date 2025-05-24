@@ -11,8 +11,9 @@ public:
     
 /**
  * @param userSession
+ * @param out_fp
  */
-void Logout(UserSession* userSession);
+void Logout(UserSession* userSession, ofstream& out_fp);
     
 void execute();
 private: 
