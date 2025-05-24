@@ -13,17 +13,19 @@
 /**
  * @param userSesseion
  * @param bicycleRepository
+ * @param in_fp
+ * @param out_fp
  */
-void RegisterBicycle::RegisterBicycle(UserSession* userSesseion, BicycleRepository* bicycleRepository) {
+void RegisterBicycle::RegisterBicycle(UserSession* userSesseion, BicycleRepository* bicycleRepository, ifstream& in_fp, ofstream& out_fp) {
 
 }
 
 /**
  * @param id
  * @param name
- * @return String
+ * @return string
  */
-String RegisterBicycle::registerBicycle(String id, String name) {
+string RegisterBicycle::registerBicycle(string id, string name) {
     return "";
 }
 

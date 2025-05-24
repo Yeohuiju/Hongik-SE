@@ -12,14 +12,16 @@ public:
 /**
  * @param userSesseion
  * @param bicycleRepository
+ * @param in_fp
+ * @param out_fp
  */
-void RegisterBicycle(UserSession* userSesseion, BicycleRepository* bicycleRepository);
+void RegisterBicycle(UserSession* userSesseion, BicycleRepository* bicycleRepository, ifstream& in_fp, ofstream& out_fp);
     
 /**
  * @param id
  * @param name
  */
-String registerBicycle(String id, String name);
+string registerBicycle(string id, string name);
     
 void execute();
 private: 

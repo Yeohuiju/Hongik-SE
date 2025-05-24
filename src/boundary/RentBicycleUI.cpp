@@ -10,14 +10,21 @@
  */
 
 
+/**
+ * @param in_fp
+ * @param out_fp
+ */
+void RentBicycleUI::RentBicycleUI(ifstream& in_fp, ofstream& out_fp) {
+
+}
+
 void RentBicycleUI::startInterface() {
 
 }
 
 /**
- * @param id
  * @param control
  */
-void RentBicycleUI::inputBicycleId(String id, RentBicycle* control) {
+void RentBicycleUI::inputInfo(RentBicycle* control) {
 
 }

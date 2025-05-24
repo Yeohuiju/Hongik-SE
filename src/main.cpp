@@ -1,8 +1,8 @@
 // 헤더 선언
 #include <stdio.h>
 #include <string.h>
-#include <iostream>
 #include <fstream>
+
 using namespace std;
 
 // 상수 선언
@@ -24,15 +24,6 @@ int main()
     in_fp.open(INPUT_FILE_NAME);
     out_fp.open(OUTPUT_FILE_NAME);
 
-    if (!in_fp.is_open()) {
-        cerr << "입력 파일을 열 수 없습니다." << endl;
-        return 1;
-    }
-    if (!out_fp.is_open()) {
-        cerr << "출력 파일을 열 수 없습니다." << endl;
-        return 1;
-    }
-
     doTask();
 
     out_fp.close();
@@ -50,7 +41,7 @@ void doTask()
 
     while(!is_program_exit)
     {
-    // 입력파일에서 메뉴 숫자 2개를 읽기
+        // 입력파일에서 메뉴 숫자 2개를 읽기
         in_fp >> menu_level_1 >> menu_level_2;
 
         // 메뉴 구분 및 해당 연산 수행
@@ -61,11 +52,8 @@ void doTask()
                 switch(menu_level_2)
                 {
                     case 1: {
-                        // 해당 기능 수행
-                        break;
-                    }
-                    case 2: {
 
+                        break;
                     }
                 }
             }

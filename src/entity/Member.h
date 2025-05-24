@@ -7,12 +7,24 @@
 #define _MEMBER_H
 
 #include "User.h"
+#include "RentalList.h"
 
 
-class Member: public User {
+class Member: public User 
+{
 private: 
-    String phoneNumber;
+    std::string phoneNumber;
     RentalList rentalList;
+
+public: 
+    
+    /**
+     * @param id
+     * @param pwd
+     * @param phoneNumber
+     */
+    Member(std::string id, std::string pwd, std::string phoneNumber);
+    std::string getPhoneNumber() const;
 };
 
 #endif //_MEMBER_H

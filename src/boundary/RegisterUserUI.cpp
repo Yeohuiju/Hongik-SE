@@ -10,14 +10,21 @@
  */
 
 
+/**
+ * @param in_fp
+ * @param out_fp
+ */
+void RegisterUserUI::RegisterUserUI(ifstream in_fp, ofstream& out_fp) {
+
+}
+
 void RegisterUserUI::startInterface() {
 
 }
 
 /**
- * @param info
  * @param control
  */
-void RegisterUserUI::inputUserInfo(String info, RegisterUser* control) {
+void RegisterUserUI::inputInfo(RegisterUser* control) {
 
 }

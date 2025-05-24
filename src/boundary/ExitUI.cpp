@@ -10,6 +10,13 @@
  */
 
 
+/**
+ * @param out_fp
+ */
+void ExitUI::ExitUI(ofsstream& out_fp) {
+
+}
+
 void ExitUI::startInterface() {
 
 }

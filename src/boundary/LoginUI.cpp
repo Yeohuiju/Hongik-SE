@@ -10,14 +10,21 @@
  */
 
 
+/**
+ * @param in_fp
+ * @param out_fp
+ */
+void LoginUI::LoginUI(ifstream& in_fp, ofstream& out_fp) {
+
+}
+
 void LoginUI::startInterface() {
 
 }
 
 /**
- * @param info
  * @param control
  */
-void LoginUI::inputLoginInfo(String info, Login* control) {
+void LoginUI::inputInfo(Login* control) {
 
 }

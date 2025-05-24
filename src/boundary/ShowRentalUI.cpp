@@ -11,8 +11,15 @@
 
 
 /**
+ * @param out_fp
+ */
+void ShowRentalUI::ShowRentalUI(ofstream& out_fp) {
+
+}
+
+/**
  * @param info
  */
-void ShowRentalUI::startInterface(String info) {
+void ShowRentalUI::startInterface(string info) {
 
 }

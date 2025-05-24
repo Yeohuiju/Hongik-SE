@@ -8,6 +8,12 @@
 
 class ExitUI {
 public: 
+    ofstream& out_fp;
+    
+/**
+ * @param out_fp
+ */
+void ExitUI(ofsstream& out_fp);
     
 void startInterface();
 };
