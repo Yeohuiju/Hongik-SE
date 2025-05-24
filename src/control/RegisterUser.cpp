@@ -15,8 +15,11 @@
  * @param in_fp
  * @param out_fp
  */
-void RegisterUser::RegisterUser(UserRepository* userRepository, ifstream in_fp, ofstream& out_fp) {
+RegisterUser::RegisterUser(UserRepository* userRepository, std::ifstream& in_fp, std::ofstream& out_fp) : userRepository(userRepository), registerUserUI(in_fp, out_fp) { }
 
+RegisterUserUI* RegisterUser::getRegisterUserUI()
+{
+    return &registerUserUI;
 }
 
 /**
@@ -25,10 +28,15 @@ void RegisterUser::RegisterUser(UserRepository* userRepository, ifstream in_fp, 
  * @param phoneNumber
  * @return string
  */
-string RegisterUser::registerUser(string id, string pwd, string phoneNumber) {
-    return "";
+std::string RegisterUser::registerUser(std::string id, std::string pwd, std::string phoneNumber) {
+    Member* member = new Member(id, pwd, phoneNumber);
+    this->userRepository->save(member);
+
+    std::string memberInfo = "> " + member->getId() + " " + member->getPwd() + " " + member->getPhoneNumber();
+    return memberInfo;
 }
 
-void RegisterUser::execute() {
-
+void RegisterUser::execute() 
+{
+    registerUserUI.startInterface();
 }

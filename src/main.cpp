@@ -3,6 +3,10 @@
 #include <string.h>
 #include <fstream>
 
+#include "./entity/UserRepository.h"
+
+#include "./control/RegisterUser.h"
+
 using namespace std;
 
 // 상수 선언
@@ -39,6 +43,8 @@ void doTask()
     int menu_level_1 = 0, menu_level_2 = 0;
     int is_program_exit = 0;
 
+    UserRepository* userRepository = new UserRepository();
+
     while(!is_program_exit)
     {
         // 입력파일에서 메뉴 숫자 2개를 읽기
@@ -52,7 +58,10 @@ void doTask()
                 switch(menu_level_2)
                 {
                     case 1: {
+                        RegisterUser* control = new RegisterUser(userRepository, in_fp, out_fp);
+                        control->execute();
 
+                        (control->getRegisterUserUI())->inputInfo(control);
                         break;
                     }
                 }
