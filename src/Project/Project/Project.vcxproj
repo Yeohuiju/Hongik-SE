@@ -145,6 +145,8 @@
     <ClCompile Include="RegisterUserUI.cpp" />
     <ClCompile Include="Rental.cpp" />
     <ClCompile Include="RentalList.cpp" />
+    <ClCompile Include="RentBicycle.cpp" />
+    <ClCompile Include="RentBicycleUI.cpp" />
     <ClCompile Include="User.cpp" />
     <ClCompile Include="UserRepository.cpp" />
     <ClCompile Include="UserSession.cpp" />
@@ -164,6 +166,8 @@
     <ClInclude Include="RegisterUserUI.h" />
     <ClInclude Include="Rental.h" />
     <ClInclude Include="RentalList.h" />
+    <ClInclude Include="RentBicycle.h" />
+    <ClInclude Include="RentBicycleUI.h" />
     <ClInclude Include="User.h" />
     <ClInclude Include="UserRepository.h" />
     <ClInclude Include="UserSession.h" />

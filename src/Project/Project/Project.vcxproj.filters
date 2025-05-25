@@ -72,6 +72,12 @@
     <ClCompile Include="RegisterBicycleUI.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="RentBicycle.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="RentBicycleUI.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Admin.h">
@@ -123,6 +129,12 @@
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="RegisterBicycleUI.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="RentBicycle.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="RentBicycleUI.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
