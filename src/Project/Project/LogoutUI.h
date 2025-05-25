@@ -8,8 +8,6 @@
 
 #include <fstream>
 
-class Logout;
-
 class LogoutUI 
 {
 private:
