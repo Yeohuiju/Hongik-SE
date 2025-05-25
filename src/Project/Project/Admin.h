@@ -1,23 +1,13 @@
-/**
- * Project Untitled
- */
-
-
 #ifndef _ADMIN_H
 #define _ADMIN_H
 
 #include "User.h"
 
-
-class Admin: public User 
+// 관리자(Admin) 클래스 정의
+class Admin : public User
 {
-public: 
-    
-    /**
-     * @param id
-     * @param pwd
-     */
-    Admin(std::string id, std::string pwd);
+public:
+    Admin(std::string id, std::string pwd);     // 생성자
 };
 
 #endif //_ADMIN_H
