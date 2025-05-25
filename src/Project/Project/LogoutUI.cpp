@@ -4,7 +4,6 @@
 
 
 #include "LogoutUI.h"
-#include "Logout.h"
 
 /**
  * LogoutUI implementation
