@@ -25,6 +25,7 @@ public:
      */
     Member(std::string id, std::string pwd, std::string phoneNumber);
     std::string getPhoneNumber() const;
+    RentalList* getRentalList();
 };
 
 #endif //_MEMBER_H

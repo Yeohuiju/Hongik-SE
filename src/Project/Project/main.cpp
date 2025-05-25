@@ -12,6 +12,7 @@
 #include "Login.h"
 #include "Logout.h"
 #include "RegisterBicycle.h"
+#include "RentBicycle.h"
 
 using namespace std;
 
@@ -122,6 +123,21 @@ void doTask()
             }
             break;
         }
+        case 4:
+            switch (menu_level_2)
+            {
+            case 1:
+            {
+                RentBicycle* control = new RentBicycle(userSession, bicycleRepository, in_fp, out_fp);
+                
+                control->execute();
+                (control->getRentBicycleUI())->inputInfo(control);
+
+                delete control;
+                break;
+            }
+            }
+            break;
         }
     }
 

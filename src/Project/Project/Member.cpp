@@ -21,3 +21,8 @@ std::string Member::getPhoneNumber() const
 {
     return phoneNumber;
 }
+
+RentalList* Member::getRentalList()
+{
+    return &rentalList;
+}
