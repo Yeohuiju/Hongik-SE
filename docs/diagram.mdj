@@ -27935,7 +27935,7 @@
 											"top": 1058,
 											"width": 161.03076171875,
 											"height": 13,
-											"text": "+ExitUI(out_fp: ofsstream&)",
+											"text": "+ExitUI(out_fp: ofstream&)",
 											"horizontalAlignment": 0
 										},
 										{
@@ -28349,7 +28349,7 @@
 										"$ref": "AAAAAAGXA/Hs0CwLqW8="
 									},
 									"name": "out_fp",
-									"type": "ofsstream&"
+									"type": "ofstream&"
 								}
 							]
 						},
