@@ -60,6 +60,12 @@
     <ClCompile Include="LoginUI.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="Logout.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="LogoutUI.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Admin.h">
@@ -99,6 +105,12 @@
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="LoginUI.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Logout.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="LogoutUI.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>

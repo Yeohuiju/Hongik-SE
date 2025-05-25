@@ -36,7 +36,7 @@ std::string Login::login(std::string id, std::string pwd)
         userSession->login(user);
     }
 
-    return "< " + user->getId() + " " + user->getPwd() + "\n";
+    return "> " + user->getId() + " " + user->getPwd() + "\n";
 }
 
 void Login::execute() 
