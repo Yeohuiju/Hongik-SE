@@ -165,7 +165,7 @@ void doTask()
             {
                 is_program_exit = 1;
 
-                Exit* control = new Exit(userSession, userRepository, bicycleRepository, in_fp, out_fp);
+                Exit* control = new Exit(in_fp, out_fp);
 
                 control->execute();
 

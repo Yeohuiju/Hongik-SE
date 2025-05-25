@@ -37,14 +37,6 @@ Bicycle* BicycleRepository::findById(std::string id) const
     return nullptr;
 }
 
-BicycleRepository::~BicycleRepository()
-{
-    for (Bicycle* bicycle : bicycleList)
-    {
-        delete bicycle;
-    }
-}
-
 bool BicycleRepository::compare(Bicycle* a, Bicycle* b)
 {
     return a->getId() < b->getId();

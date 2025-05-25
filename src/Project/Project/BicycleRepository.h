@@ -27,7 +27,6 @@ public:
      * @param id
      */
     Bicycle* findById(std::string id) const;
-    ~BicycleRepository();
 
 };
 
