@@ -1,30 +1,30 @@
-// Ìó§Îçî ÏÑ†Ïñ∏
+// «Ï¥ı º±æ
 #include <stdio.h>
 #include <string.h>
 #include <fstream>
 
-#include "./entity/UserRepository.h"
+#include "UserRepository.h"
 
-#include "./control/RegisterUser.h"
+#include "RegisterUser.h"
 
 using namespace std;
 
-// ÏÉÅÏàò ÏÑ†Ïñ∏
+// ªÛºˆ º±æ
 #define MAX_STRING 32
-#define INPUT_FILE_NAME "../resources/input.txt"
-#define OUTPUT_FILE_NAME "../resources/output.txt"
+#define INPUT_FILE_NAME "input.txt"
+#define OUTPUT_FILE_NAME "output.txt"
 
-// Ìï®Ïàò ÏÑ†Ïñ∏
+// «‘ºˆ º±æ
 void doTask();
-void program_exit();
+//void program_exit();
 
-// Î≥ÄÏàò ÏÑ†Ïñ∏
+// ∫Øºˆ º±æ
 ofstream out_fp;
 ifstream in_fp;
 
 int main()
 {
-    // ÌååÏùº ÏûÖÏ∂úÎ†•ÏùÑ ÏúÑÌïú Ï¥àÍ∏∞Ìôî
+    // ∆ƒ¿œ ¿‘√‚∑¬¿ª ¿ß«— √ ±‚»≠
     in_fp.open(INPUT_FILE_NAME);
     out_fp.open(OUTPUT_FILE_NAME);
 
@@ -32,48 +32,50 @@ int main()
 
     out_fp.close();
     in_fp.close();
-    
+
     return 0;
 }
-
 void doTask()
 {
-
-    // Î©îÎâ¥ ÌååÏã±ÏùÑ ÏúÑÌïú level Íµ¨Î∂ÑÏùÑ ÏúÑÌïú Î≥ÄÏàò
+    // ∏ﬁ¥∫ ∆ƒΩÃ¿ª ¿ß«— level ±∏∫–¿ª ¿ß«— ∫Øºˆ
     int menu_level_1 = 0, menu_level_2 = 0;
     int is_program_exit = 0;
 
     UserRepository* userRepository = new UserRepository();
 
-    while(!is_program_exit)
+    while (!is_program_exit)
     {
-        // ÏûÖÎ†•ÌååÏùºÏóêÏÑú Î©îÎâ¥ Ïà´Ïûê 2Í∞úÎ•º ÏùΩÍ∏∞
+        // ¿‘∑¬∆ƒ¿œø°º≠ ∏ﬁ¥∫ º˝¿⁄ 2∞≥∏¶ ¿–±‚
         in_fp >> menu_level_1 >> menu_level_2;
 
-        // Î©îÎâ¥ Íµ¨Î∂Ñ Î∞è Ìï¥Îãπ Ïó∞ÏÇ∞ ÏàòÌñâ
-        switch(menu_level_1)
+        // ∏ﬁ¥∫ ±∏∫– π◊ «ÿ¥Á ø¨ªÍ ºˆ«‡
+        switch (menu_level_1)
         {
             case 1:
             {
-                switch(menu_level_2)
+                switch (menu_level_2)
                 {
-                    case 1: {
+                    case 1:   // "1.1. »∏ø¯∞°¿‘°∞ ∏ﬁ¥∫ ∫Œ∫–
+                    {
                         RegisterUser* control = new RegisterUser(userRepository, in_fp, out_fp);
                         control->execute();
 
                         (control->getRegisterUserUI())->inputInfo(control);
+                        return;
                         break;
                     }
-                }
-            }
-            case 7:
-            {
-                switch(menu_level_2)
-                {
-                    case 1: // "6.1. Ï¢ÖÎ£å‚Äú Î©îÎâ¥ Î∂ÄÎ∂Ñ
+
+                    case 7:
                     {
-                        is_program_exit = 1;
-                        break;
+                        switch (menu_level_2)
+                        {
+                            case 1:   // "6.1. ¡æ∑·°∞ ∏ﬁ¥∫ ∫Œ∫–
+                            {
+                                is_program_exit = 1;
+                                break;;
+                            }
+                        }
+
                     }
                 }
             }

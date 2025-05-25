@@ -7,7 +7,8 @@
 #define _REGISTERUSERUI_H
 
 #include <fstream>
-#include "../control/RegisterUser.h"
+
+class RegisterUser;
 
 class RegisterUserUI 
 {

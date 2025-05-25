@@ -6,9 +6,9 @@
 #ifndef _REGISTERUSER_H
 #define _REGISTERUSER_H
 
-#include "../boundary/RegisterUserUI.h"
-#include "../entity/UserRepository.h"
-#include "../entity/Member.h"
+#include "RegisterUserUI.h"
+#include "UserRepository.h"
+#include "Member.h"
 
 class RegisterUser 
 {
