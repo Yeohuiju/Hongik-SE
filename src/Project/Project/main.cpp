@@ -4,12 +4,14 @@
 #include <fstream>
 
 #include "UserRepository.h"
+#include "BicycleRepository.h"
 #include "Admin.h"
 #include "UserSession.h"
 
 #include "RegisterUser.h"
 #include "Login.h"
 #include "Logout.h"
+#include "RegisterBicycle.h"
 
 using namespace std;
 
@@ -46,6 +48,7 @@ void doTask()
     int is_program_exit = 0;
 
     UserRepository* userRepository = new UserRepository();
+    BicycleRepository* bicycleRepository = new BicycleRepository();
     UserSession* userSession = new UserSession();
 
     userRepository->save(new Admin("admin", "admin"));
@@ -91,13 +94,33 @@ void doTask()
                 break;
             }
             case 2:
-                Logout * control = new Logout(userSession, out_fp);
+            {
+                Logout* control = new Logout(userSession, out_fp);
 
                 control->execute();
 
                 delete control;
                 break;
             }
+            }
+            break;
+        }
+        case 3:
+        {
+            switch (menu_level_2)
+            {
+            case 1:
+            {
+                RegisterBicycle* control = new RegisterBicycle(userSession, bicycleRepository, in_fp, out_fp);
+
+                control->execute();
+                (control->getRegisterBicycleUI())->inputInfo(control);
+
+                delete control;
+                break;
+            }
+            }
+            break;
         }
         }
     }
