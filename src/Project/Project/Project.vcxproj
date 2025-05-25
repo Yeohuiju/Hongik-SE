@@ -133,6 +133,8 @@
     <ClCompile Include="Admin.cpp" />
     <ClCompile Include="Bicycle.cpp" />
     <ClCompile Include="BicycleRepository.cpp" />
+    <ClCompile Include="Exit.cpp" />
+    <ClCompile Include="ExitUI.cpp" />
     <ClCompile Include="Login.cpp" />
     <ClCompile Include="LoginUI.cpp" />
     <ClCompile Include="Logout.cpp" />
@@ -157,6 +159,8 @@
     <ClInclude Include="Admin.h" />
     <ClInclude Include="Bicycle.h" />
     <ClInclude Include="BicycleRepository.h" />
+    <ClInclude Include="Exit.h" />
+    <ClInclude Include="ExitUI.h" />
     <ClInclude Include="Login.h" />
     <ClInclude Include="LoginUI.h" />
     <ClInclude Include="Logout.h" />

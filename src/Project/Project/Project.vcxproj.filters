@@ -84,6 +84,12 @@
     <ClCompile Include="ShowRentalUI.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="Exit.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ExitUI.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Admin.h">
@@ -147,6 +153,12 @@
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="ShowRentalUI.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Exit.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="ExitUI.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>

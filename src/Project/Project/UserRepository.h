@@ -27,6 +27,7 @@ public:
      * @param id
      */
     User* findById(std::string id) const;
+    ~UserRepository();
 };
 
 #endif //_USERREPOSITORY_H

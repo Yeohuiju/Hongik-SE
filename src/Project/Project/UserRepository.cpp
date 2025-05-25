@@ -36,6 +36,14 @@ User* UserRepository::findById(std::string id) const
     return nullptr;
 }
 
+UserRepository::~UserRepository()
+{
+    for (User* user : userList)
+    {
+        delete user;
+    }
+}
+
 bool UserRepository::compare(User* a, User* b)
 {
     return a->getId() < b->getId();

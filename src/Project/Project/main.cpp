@@ -14,6 +14,7 @@
 #include "RegisterBicycle.h"
 #include "RentBicycle.h"
 #include "ShowRental.h"
+#include "Exit.h"
 
 using namespace std;
 
@@ -157,6 +158,22 @@ void doTask()
             }
             break;
         }
+        case 6:
+            switch (menu_level_2)
+            {
+            case 1:
+            {
+                is_program_exit = 1;
+
+                Exit* control = new Exit(userSession, userRepository, bicycleRepository, in_fp, out_fp);
+
+                control->execute();
+
+                delete control;
+                break;
+            }
+            }
+            break;
         }
     }
 
