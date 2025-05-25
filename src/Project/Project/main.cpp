@@ -9,6 +9,7 @@
 
 #include "RegisterUser.h"
 #include "Login.h"
+#include "Logout.h"
 
 using namespace std;
 
@@ -68,6 +69,8 @@ void doTask()
                 control->execute();
                 (control->getRegisterUserUI())->inputInfo(control);
 
+
+                delete control;
                 break;
             }
             }
@@ -84,13 +87,20 @@ void doTask()
                 control->execute();
                 (control->getLoginUI())->inputInfo(control);
 
+                delete control;
                 break;
             }
+            case 2:
+                Logout * control = new Logout(userSession, out_fp);
 
+                control->execute();
 
+                delete control;
+                break;
             }
         }
         }
     }
+
     return;
 }

@@ -135,6 +135,8 @@
     <ClCompile Include="BicycleRepository.cpp" />
     <ClCompile Include="Login.cpp" />
     <ClCompile Include="LoginUI.cpp" />
+    <ClCompile Include="Logout.cpp" />
+    <ClCompile Include="LogoutUI.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Member.cpp" />
     <ClCompile Include="RegisterUser.cpp" />
@@ -151,6 +153,8 @@
     <ClInclude Include="BicycleRepository.h" />
     <ClInclude Include="Login.h" />
     <ClInclude Include="LoginUI.h" />
+    <ClInclude Include="Logout.h" />
+    <ClInclude Include="LogoutUI.h" />
     <ClInclude Include="Member.h" />
     <ClInclude Include="RegisterUser.h" />
     <ClInclude Include="RegisterUserUI.h" />
