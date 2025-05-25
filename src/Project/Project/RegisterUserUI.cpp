@@ -16,6 +16,5 @@ void RegisterUserUI::inputInfo(RegisterUser* control)
 
 	in_fp >> id >> pwd >> phoneNumber;
 
-	std::string memberInfo = control->registerUser(id, pwd, phoneNumber);
-	out_fp << memberInfo;
+	out_fp << control->registerUser(id, pwd, phoneNumber) << std::endl;
 }

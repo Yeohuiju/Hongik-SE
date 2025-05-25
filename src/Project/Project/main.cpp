@@ -4,8 +4,11 @@
 #include <fstream>
 
 #include "UserRepository.h"
+#include "Admin.h"
+#include "UserSession.h"
 
 #include "RegisterUser.h"
+#include "Login.h"
 
 using namespace std;
 
@@ -42,6 +45,9 @@ void doTask()
     int is_program_exit = 0;
 
     UserRepository* userRepository = new UserRepository();
+    UserSession* userSession = new UserSession();
+
+    userRepository->save(new Admin("admin", "admin"));
 
     while (!is_program_exit)
     {
@@ -51,34 +57,40 @@ void doTask()
         // 메뉴 구분 및 해당 연산 수행
         switch (menu_level_1)
         {
+        case 1:
+        {
+            switch (menu_level_2)
+            {
+            case 1:   // "1.1. 회원가입“ 메뉴 부분
+            {
+                RegisterUser* control = new RegisterUser(userRepository, in_fp, out_fp);
+
+                control->execute();
+                (control->getRegisterUserUI())->inputInfo(control);
+
+                break;
+            }
+            }
+            break;
+        }
+        case 2:
+        {
+            switch (menu_level_2)
+            {
             case 1:
             {
-                switch (menu_level_2)
-                {
-                    case 1:   // "1.1. 회원가입“ 메뉴 부분
-                    {
-                        RegisterUser* control = new RegisterUser(userRepository, in_fp, out_fp);
-                        control->execute();
+                Login* control = new Login(userRepository, userSession, in_fp, out_fp);
 
-                        (control->getRegisterUserUI())->inputInfo(control);
-                        return;
-                        break;
-                    }
+                control->execute();
+                (control->getLoginUI())->inputInfo(control);
 
-                    case 7:
-                    {
-                        switch (menu_level_2)
-                        {
-                            case 1:   // "6.1. 종료“ 메뉴 부분
-                            {
-                                is_program_exit = 1;
-                                break;;
-                            }
-                        }
+                break;
+            }
 
-                    }
-                }
+
             }
         }
+        }
     }
+    return;
 }

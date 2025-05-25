@@ -32,8 +32,7 @@ std::string RegisterUser::registerUser(std::string id, std::string pwd, std::str
     Member* member = new Member(id, pwd, phoneNumber);
     this->userRepository->save(member);
 
-    std::string memberInfo = "> " + member->getId() + " " + member->getPwd() + " " + member->getPhoneNumber();
-    return memberInfo;
+    return "> " + member->getId() + " " + member->getPwd() + " " + member->getPhoneNumber() + "\n";
 }
 
 void RegisterUser::execute() 
