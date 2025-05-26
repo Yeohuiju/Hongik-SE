@@ -25,32 +25,16 @@ using namespace std;
 #define INPUT_FILE_NAME "input.txt"
 #define OUTPUT_FILE_NAME "output.txt"
 
-// 함수 선언
-void doTask();
-
-// 변수 선언
-ofstream out_fp;
-ifstream in_fp;
-
 int main()
 {
+    // 변수 선언
+    ofstream out_fp;
+    ifstream in_fp;
+
     // 파일 입출력을 위한 초기화
     in_fp.open(INPUT_FILE_NAME);
     out_fp.open(OUTPUT_FILE_NAME);
 
-    doTask();
-
-    return 0;
-}
-
-/*
-    함수 이름 : doTask()
-    기능     : 사용자가 종료를 선택할 때까지 선택한 메뉴에 맞는 기능을 수행
-    전달 인자 : 없음
-    반환값   : 없음
-*/
-void doTask()
-{
     // 메뉴 파싱을 위한 level 구분을 위한 변수
     int menu_level_1 = 0, menu_level_2 = 0;
     int is_program_exit = 0;
@@ -194,5 +178,5 @@ void doTask()
         }
     }
 
-    return;
+    return 0;
 }
